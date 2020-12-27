@@ -13,16 +13,16 @@ const menu = require("./lib/menu.js")
 
 //Setting
 
-const apivhtear = 'Apikey vhtear';
-const apibarbar = 'Apikey mhankbarbar';
-const BotName = 'Nama bot'; 
-const instagram = 'Instagram kamu'; 
-const aktif = 'Kapan bot aktif';
+const apivhtear = 'Zllo81-cQHtUN-qEyAJq-FUlM1z-oKSynl';
+const apibarbar = 'Zllo81-cQHtUN-qEyAJq-FUlM1z-oKSynl';
+const BotName = 'Sagiri Chan'; 
+const instagram = 'www.instagram.com/cogan_112'; 
+const aktif = 'tergantung kuota';
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:Nama kamu\n' // Nama kamu
-            + 'ORG:Nama bot;\n' // Nama bot
-            + 'TEL;type=CELL;type=VOICE;waid=6280000000000:+62 000-0000-0000\n' //Nomor whatsapp kamu
+            + 'FN:stylecogan28\n' // Nama kamu
+            + 'ORG:Sagiri Chan;\n' // Nama bot
+            + 'TEL;type=CELL;type=VOICE;waid=6289509938750:+62 895-0993-8750\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 const
 {
