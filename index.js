@@ -15,7 +15,7 @@ const menu = require("./lib/menu.js")
 
 const apivhtear = 'Zllo81-cQHtUN-qEyAJq-FUlM1z-oKSynl';
 const apibarbar = 'Zllo81-cQHtUN-qEyAJq-FUlM1z-oKSynl';
-const BotName = 'Sagiri Chan'; 
+const BotName = '♥Sagiri Chan♥'; 
 const instagram = 'www.instagram.com/cogan_112'; 
 const aktif = 'tergantung kuota';
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
@@ -294,7 +294,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
 else if (text == '.opengc'){
 let hasil = `${id.split("@s.whatsapp.net")[0]}`;
    conn.groupSettingChange (hasil, GroupSettingChange.messageSend, false);
-conn.sendMessage(id, 'Hai' ,MessageType.text);
+conn.sendMessage(id, 'Hai beban group' ,MessageType.text);
 }
 
 //tutup gc
@@ -334,7 +334,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
 if (text.includes('.tagme')) {
  var nomor = m.participant
  const options = {
-       text: `@${nomor.split("@s.whatsapp.net")[0]} Hai Sayang 🤗`,
+       text: `@${nomor.split("@s.whatsapp.net")[0]} Hai Sayangku yg paling manis🤗`,
        contextInfo: { mentionedJid: [nomor] }
  }
  conn.sendMessage(id, options, MessageType.text)
@@ -1407,6 +1407,19 @@ Silakan pilih :
 
 *Selesaikan perintah untuk melakukan TOD selanjutnya* ⚠️` ,MessageType.text, {quoted: m});
 }
+
+//tagall
+if (!isGroup) return reply(mess.only.group)
+if (!isGroupAdmins) return reply(mess.only.admin)
+members_id = []
+teks = (args.length > 1) ? body.slice(8).trim() : ''
+teks += '\n\n'
+for (let mem of groupMembers) {
+rchoice = Math.floor(Math.random() * list_emoji.length)
+teks += `┣❥ @${mem.jid.split('@')[0]}\n`
+members_id.push(mem.jid)
+}
+mentions(teks, members_id, true)
 
 //Hay gay
 //create @mrf.zvx don't delate this please
