@@ -356,7 +356,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
 }
 if (text.includes('.nulis')){
   const teks = text.replace(/.nulis /, '')
-    axios.get(`https://alfians-api.herokuapp.com/nulis?text=${teks}`)
+    axios.get(`https://api.i-tech.id/tools/nulis?key=Zllo81-cQHtUN-qEyAJq-FUlM1z-oKSynl&text=${teks}`)
     .then((res) => {
       imageToBase64(res.data.result)
         .then(
@@ -1219,7 +1219,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
 }
 if (text.includes(".bot")){
 const teks = text.replace(/.bot /, "")
-axios.get(`https://simsumi.herokuapp.com/api?kata=${teks}`).then((res) => {
+axios.get(`https://api.i-tech.id/tools/simi?key=z_1ZGRuRKKg9HBtUx3njnWUBEj0oj~6qzlIS8uRH&lang=id&kata=${teks}`).then((res) => {
     let hasil = `${res.data.result}\n\n*Simsimi chat*`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
