@@ -15,13 +15,13 @@ const menu = require("./lib/menu.js")
 
 const apivhtear = 'Zllo81-cQHtUN-qEyAJq-FUlM1z-oKSynl';
 const apibarbar = 'Zllo81-cQHtUN-qEyAJq-FUlM1z-oKSynl';
-const BotName = '♥Sagiri Chan♥'; 
+const BotName = '❤Sagiri Chan❤'; 
 const instagram = 'www.instagram.com/cogan_112'; 
 const aktif = 'tergantung kuota';
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:stylecogan28\n' // Nama kamu
-            + 'ORG:Sagiri Chan;\n' // Nama bot
+            + 'FN:StyleCogan\n' // Nama kamu
+            + 'ORG:❤Sagiri Chan❤;\n' // Nama bot
             + 'TEL;type=CELL;type=VOICE;waid=6289509938750:+62 895-0993-8750\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 const
@@ -294,7 +294,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
 else if (text == '.opengc'){
 let hasil = `${id.split("@s.whatsapp.net")[0]}`;
    conn.groupSettingChange (hasil, GroupSettingChange.messageSend, false);
-conn.sendMessage(id, 'Hai beban group' ,MessageType.text);
+conn.sendMessage(id, 'Hai para beban group:)' ,MessageType.text);
 }
 
 //tutup gc
@@ -305,7 +305,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
 else if (text == '.closegc'){
  let hasil = `${id.split("@s.whatsapp.net")[0]}`;
    conn.groupSettingChange (hasil, GroupSettingChange.messageSend, true);
-conn.sendMessage(id, 'Done, Tutup dulu yah' ,MessageType.text);
+conn.sendMessage(id, 'Done, Tutup dulu yah jangan kangen' ,MessageType.text);
 }
 
 
@@ -334,7 +334,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
 if (text.includes('.tagme')) {
  var nomor = m.participant
  const options = {
-       text: `@${nomor.split("@s.whatsapp.net")[0]} Hai Sayangku yg paling manis🤗`,
+       text: `@${nomor.split("@s.whatsapp.net")[0]} Hai sayangku yg paling manis 😍`,
        contextInfo: { mentionedJid: [nomor] }
  }
  conn.sendMessage(id, options, MessageType.text)
@@ -1219,7 +1219,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
 }
 if (text.includes(".bot")){
 const teks = text.replace(/.bot /, "")
-axios.get(`https://api.i-tech.id/tools/simi?key=z_1ZGRuRKKg9HBtUx3njnWUBEj0oj~6qzlIS8uRH&lang=id&kata=${teks}`).then((res) => {
+axios.get(`https://st4rz.herokuapp.com/api/simsimi?kata=${teks}`).then((res) => {
     let hasil = `${res.data.result}\n\n*Simsimi chat*`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
@@ -1407,7 +1407,6 @@ Silakan pilih :
 
 *Selesaikan perintah untuk melakukan TOD selanjutnya* ⚠️` ,MessageType.text, {quoted: m});
 }
-
 
 //Hay gay
 //create @mrf.zvx don't delate this please
